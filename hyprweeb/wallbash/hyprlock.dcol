@@ -1,8 +1,0 @@
-~/.config/hypr/resources/colors.conf
-$accent = <wallbash_pry1_rgba(1)>
-$text = <wallbash_txt1_rgba(1)>
-$background = <wallbash_1xa4_rgba(1)>
-$secondary = <wallbash_pry2_rgba(1)>
-$capscolor = <wallbash_pry3_rgba(1)>
-$accentAlpha = <wallbash_pry1>
-$textAlpha = <wallbash_txt1>
