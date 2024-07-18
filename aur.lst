@@ -1,10 +1,9 @@
-anyrun-git r163.c6101a3-1
-catppuccin-gtk-theme-mocha 1.0.3-1
-colloid-catppuccin-gtk-theme-git 2024.06.18.r13.gc4cf73e-1
-grimblast-git r105.65d42dc-1
-hyprpicker 0.3.0-1
-phonon-qt6-mpv-git 0.1.0.r0.g069aca4-1
-sddm-git 0.21.0.20.gb6b6c7c-1
-tela-circle-icon-theme-dracula 2024.04.19-2
-wleave-git 0.4.1.r0.ga44c38b-1
-yay 12.3.5-1
+catppuccin-gtk-theme-mocha
+colloid-catppuccin-gtk-theme-git
+grimblast-git
+hyprpicker
+phonon-qt6-mpv-git
+sddm-git
+tela-circle-icon-theme-dracula
+wleave-git
+yay
