@@ -1,8 +1,12 @@
 #!/bin/bash
 
 set -euo pipefail
-mkdir Repos
-cd Repos
-git clone https://aur.archlinux.org/yay.git
+
+cd $HOME/Repos/ 
+
+if [ ! -d $HOME/Repos/yay ]; then
+	git clone https://aur.archlinux.org/yay.git
+fi
+
 cd yay
 makepkg -si
