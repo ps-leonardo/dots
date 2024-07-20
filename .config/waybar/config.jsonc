@@ -10,9 +10,9 @@
     "margin-top": -5,
 
 
-	"modules-left": ["custom/left","custom/rofi","temperature","custom/right","custom/left","hyprland/window","custom/right"],
+	"modules-left": ["custom/left","custom/rofi","temperature","custom/right","hyprland/window"],
 	"modules-center": ["custom/left","hyprland/workspaces#kanji","custom/right"],
-	"modules-right": ["custom/left","custom/spotify","custom/right","custom/left","pulseaudio","tray","clock","custom/right"],
+	"modules-right": ["custom/spotify","custom/left","pulseaudio","tray","clock","custom/right"],
 
  
    "network": {
@@ -36,12 +36,12 @@
     },
 
      "custom/rofi": {
-        "format": "  {}",
+        "format": " {}",
 	},
 
     "custom/spotify": {
         "exec": "~/.local/share/scripts/mediaplayer.py --player spotify",
-        "format": " {}",
+        "format": "   {}  ",
         "return-type": "json",
         "on-click": "playerctl play-pause --player spotify",
         "on-click-right": "playerctl next --player spotify",
@@ -54,6 +54,7 @@
     "hyprland/window": {
         "format": "{}",
         "rewrite": {
+            "(.*.)": "  $1  ",
             "v (.*)": " $1",
             "(.*) — Mozilla Firefox": "󰈹 $1",
             "Spotify": " Spotify"

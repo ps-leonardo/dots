@@ -81,8 +81,9 @@ tooltip {
   margin-top: 4px;
   margin-bottom: 4px;
   padding: 0px;
-  padding-left: 5px;
-  padding-right: 5px;
+  margin-left: 9px;
+  margin-right: 9px;
+  border-radius: 3px 3px 3px 3px;
 }
 
 #custom-rofi {
@@ -140,13 +141,13 @@ tooltip {
 #custom-right {
     margin-right: 9px;
     padding-right: 3px;
-    border-radius: 0px 22px 22px 0px;
+    border-radius: 0px 3px 3px 0px;
 }
 
 #custom-left {
     margin-left: 9px;
     padding-left: 3px;
-    border-radius: 22px 0px 0px 22px;
+    border-radius: 3px 0px 0px 3px;
 }
 
 #custom-spotify {
@@ -154,5 +155,8 @@ tooltip {
   background: @base;
   margin-top: 4px;
   margin-bottom: 4px;
+  margin-left: 9px;
+  margin-right: 9px;
+  border-radius: 3px 3px 3px 3px;
   
 }
