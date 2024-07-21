@@ -55,7 +55,7 @@ tooltip {
 
 #workspaces button.active {
     background: @color10;
-    color: @background;
+    color: @foreground;
     margin-left: 3px;
     padding-left: 12px;
     padding-right: 12px;
