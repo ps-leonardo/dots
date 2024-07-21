@@ -1,6 +1,6 @@
 backend = "wal"
 threshold = 10
-color_space = "lch"
+color_space = "labmixed"
 palette = "dark16"
 
 [templates]
