@@ -4,4 +4,13 @@ SCRIPTSDIR=~/.local/share/scripts/
 WALLPAPERDIR=~/.local/share/wallpapers/
 
 cd $WALLPAPERDIR
-~/.local/share/scripts/chwp.sh "$WALLPAPERDIR/$(eza | fuzzel --dmenu)"
+WALLPAPER="$(eza | fuzzel --dmenu)"
+
+echo $WALLPAPER
+
+if [[ -z $WALLPAPER ]]; then
+  notify-send 'No wallpaper selected'
+  exit
+fi
+
+~/.local/share/scripts/chwp.sh $WALLPAPER

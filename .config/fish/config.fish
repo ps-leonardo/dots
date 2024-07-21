@@ -1,6 +1,5 @@
 if status is-interactive
 
-    cat ~/.cache/wallust/sequences
     set -g fish_greeting
 
     fastfetch

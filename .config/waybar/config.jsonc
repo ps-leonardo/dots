@@ -46,7 +46,7 @@
         "on-click": "playerctl play-pause --player spotify",
         "on-click-right": "playerctl next --player spotify",
         "on-click-middle": "playerctl previous --player spotify",
-        "max-length": 25,
+        "max-length": 30,
         "escape": true,
         "tooltip": true
     },
