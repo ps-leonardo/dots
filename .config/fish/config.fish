@@ -1,7 +1,7 @@
 if status is-interactive
 
+    cat ~/.cache/wallust/sequences
     set -g fish_greeting
-    fish_add_path -g /home/leonardo/Scripts/
 
     fastfetch
 
