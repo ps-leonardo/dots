@@ -8,7 +8,9 @@ bluez-utils
 btop
 btrfs-progs
 cliphist
+discord
 dolphin
+dosfstools
 dunst
 efibootmgr
 eza
@@ -47,6 +49,7 @@ networkmanager
 noto-fonts-cjk
 noto-fonts-emoji
 npm
+ntfs-3g
 os-prober
 otf-aurulent-nerd
 otf-codenewroman-nerd
