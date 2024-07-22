@@ -16,7 +16,9 @@ window#waybar {
 #temperature,
 #clock,
 #workspaces,
-#custom-rofi,
+#cpu,
+#custom-arch,
+#custom-cpuinfo,
 #tray,
 #pulseaudio,
 #backlight,
@@ -88,7 +90,19 @@ tooltip {
   
 }
 
-#custom-rofi {
+#cpu {
+    color: @foreground;
+    padding-left: 0px;
+    padding-right: 5px;
+}
+
+#custom-arch {
+    color: @foreground;
+    padding-left: 0px;
+    padding-right: 5px;
+}
+
+#custom-cpuinfo {
     color: @foreground;
     padding-left: 0px;
     padding-right: 5px;
@@ -126,7 +140,11 @@ tooltip {
 
 #tray {
   padding-left: 0px;
+  margin-top: 4px;
+  margin-bottom: 4px;
+  padding-top: 1px;
   padding-right: 5px;
+  padding-bottom: 1px;
 }
 
 #network {
