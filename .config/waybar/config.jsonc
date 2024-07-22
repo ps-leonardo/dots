@@ -41,12 +41,12 @@
 
     "custom/spotify": {
         "exec": "~/.local/share/scripts/mediaplayer.py --player spotify",
-        "format": "   {}  ",
+        "format": "    {}  ",
         "return-type": "json",
         "on-click": "playerctl play-pause --player spotify",
         "on-click-right": "playerctl next --player spotify",
         "on-click-middle": "playerctl previous --player spotify",
-        "max-length": 30,
+        "max-length": 45,
         "escape": true,
         "tooltip": true
     },

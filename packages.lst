@@ -69,9 +69,9 @@ pipewire
 pipewire-alsa
 pipewire-jack
 pipewire-pulse
+python-pillow
 polkit-kde-agent
 qbittorrent
-ranger
 ripgrep
 rust
 sddm
@@ -141,6 +141,7 @@ wireplumber
 wl-clipboard
 xdg-desktop-portal-hyprland
 yad
+yazi
 zig
 zoxide
 zram-generator
