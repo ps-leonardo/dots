@@ -88,7 +88,7 @@
         "all-outputs": true,
         "on-click": "activate",
         "format": "{icon}",
-        "persistent_workspaces": {
+        "persistent-workspaces": {
             "1": [],
             "2": [],
             "3": [],

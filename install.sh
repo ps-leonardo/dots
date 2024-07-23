@@ -3,6 +3,9 @@
 # Check if yay or paru is installed and installs yay if none found.
 aurhlpr=$(pacman -Qq yay 2>/dev/null || pacman -Qq paru 2>/dev/null)
 
+sudo cp /etc/makepkg.conf /etc/makepkg.conf.t2.bkp
+sudo sed -i "/^OPTIONS=(strip docs !libtool !staticlibs emptydirs zipman purge debug lto)/c\OPTIONS=(strip docs !libtool !staticlibs emptydirs zipman purge !debug lto)" /etc/makepkg.conf
+
 if [ -z $aurhlpr ]; then
   echo 'aur helper not found, installing yay'
   ./install_yay.sh
@@ -17,8 +20,6 @@ sudo sed -i "/^#Color/c\Color\nILoveCandy
 /^#VerbosePkgLists/c\VerbosePkgLists
 /^#ParallelDownloads/c\ParallelDownloads = 5" /etc/pacman.conf
 
-sudo cp /etc/makepkg.conf /etc/makepkg.conf.t2.bkp
-sudo sed -i "/^OPTIONS=(strip docs !libtool !staticlibs emptydirs zipman purge debug lto)/c\OPTIONS=(strip docs !libtool !staticlibs emptydirs zipman !purge debug lto)" /etc/makepkg.conf
 
 # Install official and aur packages
 sudo pacman -S --needed - <packages.lst
