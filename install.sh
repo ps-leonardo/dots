@@ -35,6 +35,14 @@ $aurhlpr -S --needed - <aur.lst
 echo "\n"
 sleep 0.5
 
+# Install nerd fonts
+echo "Installing Nerd Fonts"
+sudo pacman -S --needed --asdeps nerd-fonts
+sudo pacman -S --needed --asdeps ttf-font-awesome
+
+echo "\n"
+sleep 0.5
+
 # Copy configs, scripts and wallpapers
 echo "Copying configs, scripts and wallpapers"
 cp -r ~/Repos/dots/.config/* ~/.config/
