@@ -56,7 +56,7 @@ tooltip {
 }
 
 #workspaces button.active {
-    background: @color10;
+    background: @color9;
     color: @background;
     margin-left: 3px;
     padding-left: 12px;
@@ -67,7 +67,7 @@ tooltip {
 }
 
 #workspaces button:hover {
-    background: @color2;
+    background: @color1;
     color: @background;
     border: none;
 }
