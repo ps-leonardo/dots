@@ -72,6 +72,9 @@ pipewire-pulse
 python-pillow
 polkit-kde-agent
 qbittorrent
+qt5-quickcontrols2
+qt5-graphicaleffects
+qt5-svg
 ripgrep
 rust
 sddm
