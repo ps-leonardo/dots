@@ -9,7 +9,6 @@ btop
 btrfs-progs
 cliphist
 discord
-dolphin
 dosfstools
 dunst
 efibootmgr
@@ -51,6 +50,7 @@ noto-fonts-emoji
 npm
 ntfs-3g
 os-prober
+p7zip
 papirus-icon-theme
 pavucontrol
 pipewire
@@ -71,6 +71,7 @@ sddm
 slurp
 spotify-launcher
 starship
+unzip
 vim
 waybar
 wf-recorder
@@ -81,5 +82,6 @@ yad
 yazi
 yt-dlp
 zig
+zip
 zoxide
 zram-generator
