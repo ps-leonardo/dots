@@ -12,7 +12,6 @@ window#waybar {
     background-color: rgba(0, 0, 0, .0);
 }
 
-#battery,
 #temperature,
 #clock,
 #workspaces,
@@ -21,11 +20,10 @@ window#waybar {
 #custom-cpuinfo,
 #tray,
 #pulseaudio,
-#backlight,
 #network,
 #custom-right,
 #custom-left {
-   color: @foreground;
+   color: #c0caf5;
    background: @background;
    margin: 4px 0px 4px 0px;
    opacity: 1;
@@ -34,7 +32,7 @@ window#waybar {
 
 tooltip {
     background: @background;
-    color: @foreground;
+    color: #c0caf5;
     border-radius: 22px;
     border-width: 2px;
     border-style: solid;
@@ -50,7 +48,7 @@ tooltip {
     margin-bottom: 3px;
     padding-left: 3px;
     padding-right: 3px;
-    color: @foreground;
+    color: #c0caf5;
     animation: gradient_f 20s ease-in infinite;
     transition: all 0.5s cubic-bezier(.55,-0.68,.48,1.682);
 }
@@ -80,7 +78,7 @@ tooltip {
 
 #window {
   background: @background;
-  color: @foreground;
+  color: #c0caf5;
   margin-top: 4px;
   margin-bottom: 4px;
   padding: 0px;
@@ -91,60 +89,54 @@ tooltip {
 }
 
 #cpu {
-    color: @foreground;
+    color: #c0caf5;
     padding-left: 0px;
     padding-right: 5px;
 }
 
 #custom-arch {
-    color: @foreground;
+    color: #7dcfff;
     padding-left: 0px;
     padding-right: 5px;
 }
 
 #custom-cpuinfo {
-    color: @foreground;
+    color: #c0caf5;
     padding-left: 0px;
     padding-right: 5px;
 }
 
 #temperature {
-    color: @foreground;
+    color: #c0caf5;
     padding-left: 0px;
     padding-right: 5px;
 }
 
 #temperature.critical {
-    color: rgba(255,74,91,1);
-    padding-left: 0px;
-    padding-right: 19px;
-}
-
-#backlight {
-    color: #FF8B49;
+    color: #f7768e;
     padding-left: 0px;
     padding-right: 19px;
 }
 
 #pulseaudio {
-    color: @foreground;
+    color: #c0caf5;
     padding-left: 0px;
     padding-right: 5px;
 }
 
-#battery {
-    color: #458588;
-    padding-left: 0px;
-    padding-right: 0px;
-}
-
 #tray {
   padding-left: 0px;
+  color: #c0caf5;
   margin-top: 4px;
   margin-bottom: 4px;
   padding-top: 1px;
   padding-right: 5px;
   padding-bottom: 1px;
+}
+
+#tray menu * {
+  background-color: @background;
+  color: #c0caf5;
 }
 
 #network {
@@ -153,7 +145,7 @@ tooltip {
 }
 
 #clock {
-   color: @foreground;
+   color: #c0caf5;
    padding-left: 0px;
    padding-right: 0px;
 }
@@ -171,12 +163,11 @@ tooltip {
 }
 
 #custom-spotify {
-  color: @foreground;
+  color: #9ece6a;
   background: @background;
   margin-top: 4px;
   margin-bottom: 4px;
   margin-left: 9px;
   margin-right: 9px;
   border-radius: 3px 3px 3px 3px;
-  
 }
