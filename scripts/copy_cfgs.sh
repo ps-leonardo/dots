@@ -10,3 +10,6 @@ cp -r ~/Repos/dots/.local/share ~/.local/
 echo "Installing LazyVim"
 git clone https://github.com/LazyVim/starter ~/.config/nvim
 rm -rf ~/.config/nvim/.git
+
+# Rebuilding bat theme cache
+bat cache --build
