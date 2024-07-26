@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=PCSX2
+Exec=/home/leonardo/Repos/pcsx2/build/bin/pcsx2-qt
+Icon=/home/leonardo/Repos/pcsx2/pcsx2-qt/resources/icons/AppIcon64.png
+Terminal=false
+Type=Application
+Categories=Game;
+Comment=PCSX2 PS2 Emulator

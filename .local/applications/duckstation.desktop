@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=Duckstation
+Exec=/home/leonardo/Repos/duckstation/build-release/bin/duckstation-qt
+Icon=/home/leonardo/Repos/duckstation/data/resources/images/duck.png
+Terminal=false
+Type=Application
+Categories=Game;
+Comment=Duckstation PSX Emulator
