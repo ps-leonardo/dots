@@ -16,3 +16,5 @@ fi
 #waybar &
 
 swww img "$WALLPAPERDIR$WALLPAPER" --transition-type center
+
+magick "$WALLPAPERDIR$WALLPAPER" "current.jpg"
