@@ -2,10 +2,10 @@
 
 set -euo pipefail
 
-cd $HOME/Repos/ 
+cd $HOME/Repos/
 
 if [ ! -d $HOME/Repos/yay ]; then
-	git clone https://aur.archlinux.org/yay.git
+  git clone https://aur.archlinux.org/yay.git
 fi
 
 cd yay
