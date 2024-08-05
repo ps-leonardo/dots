@@ -2,7 +2,9 @@
 
 set -euo pipefail
 
-cp -r ~/Repos/dots/.config/* ~/.config/
+THEME=$1
+
+cp -r ~/Repos/dots/themes/$THEME/* ~/.config/
 cp -r ~/Repos/dots/.local/share ~/.local/
 
 # Rebuilding bat theme cache
