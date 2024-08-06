@@ -37,6 +37,9 @@ sleep 5
 sudo pacman -S --needed - <../packages.lst
 $aurhlpr -S --needed - <../aur.lst
 
+echo -e "${GREEN}Done${RESET}"
+echo ""
+
 echo -e "${RED}Installing Nerd Fonts${RESET}"
 sleep 5
 sudo pacman -S --needed --asdeps nerd-fonts
@@ -46,7 +49,7 @@ echo -e "${GREEN}Done${RESET}"
 echo ""
 
 # Copy configs and scripts
-read -p "Which theme would you like to install?\n" THEME
+read -p $'Which theme would you like to install? (tokyo-night/catppuccin-mocha)\n' THEME
 echo -e "${RED}Copying $THEME configs, and default scripts${RESET}"
 sleep 5
 ./copy_cfgs.sh "$THEME"
@@ -71,8 +74,8 @@ echo -e "${GREEN}Done${RESET}"
 echo ""
 
 #Apply Grub themes
-read -p "Which grub theme would you like to apply? (yorha/amber-crt)\n" GRUBTHEME
-echo -e "${RED}Applying grub theme"
+read -p $'Which grub theme would you like to apply? (yorha/amber-crt)\n' GRUBTHEME
+echo -e "${RED}Applying grub theme${RESET}"
 ./apply_grub_themes.sh "$GRUBTHEME"
 
 echo -e "${GREEN} All done, you can reboot now${RESET}"
