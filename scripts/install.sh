@@ -19,11 +19,11 @@ echo ""
 # Check if yay or paru is installed and installs yay if none found.
 echo -e "${RED}Checking for aur helper${RESET}"
 sleep 5
-aurhlpr=$(pacman -Qq yay 2>/dev/null || pacman -Qq paru 2>/dev/null)
+export aurhlpr=$(pacman -Qq yay 2>/dev/null || pacman -Qq paru 2>/dev/null)
 if [ -z $aurhlpr ]; then
   echo -e "${RED}aur helper not found, installing yay${RESET}"
   ./install_yay.sh
-  aurhlpr=yay
+  export aurhlpr=yay
 fi
 
 echo -e "${GREEN}Done${RESET}"
