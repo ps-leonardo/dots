@@ -34,7 +34,7 @@ window#waybar {
 tooltip {
     background: @base;
     color: @text;
-    border-radius: 22px;
+    border-radius: 2px;
     border-width: 2px;
     border-style: solid;
     border-color: #11111b;
@@ -44,7 +44,7 @@ tooltip {
     box-shadow: none;
     text-shadow: none;
     padding: 0px;
-    border-radius: 9px;
+    border-radius: 2px;
     margin-top: 3px;
     margin-bottom: 3px;
     padding-left: 3px;
@@ -55,19 +55,17 @@ tooltip {
 }
 
 #workspaces button.active {
-    background: @mauve;
-    color: @text;
+    color: @blue;
     margin-left: 3px;
-    padding-left: 12px;
-    padding-right: 12px;
+    padding-left: 3px;
+    padding-right: 3px;
     margin-right: 3px;
     animation: gradient_f 20s ease-in infinite;
     transition: all 0.3s cubic-bezier(.55,-0.68,.48,1.682);
 }
 
 #workspaces button:hover {
-    background: @pink;
-    color: @text;
+    color: @sky;
     border: none;
 }
 
@@ -85,7 +83,7 @@ tooltip {
   padding: 0px;
   margin-left: 9px;
   margin-right: 9px;
-  border-radius: 3px 3px 3px 3px;
+  border-radius: 2px 2px 2px 2px;
   
 }
 
@@ -149,13 +147,13 @@ tooltip {
 #custom-right {
     margin-right: 9px;
     padding-right: 3px;
-    border-radius: 0px 3px 3px 0px;
+    border-radius: 0px 2px 2px 0px;
 }
 
 #custom-left {
     margin-left: 9px;
     padding-left: 3px;
-    border-radius: 3px 0px 0px 3px;
+    border-radius: 2px 0px 0px 2px;
 }
 
 #custom-spotify {
@@ -165,5 +163,5 @@ tooltip {
   margin-bottom: 4px;
   margin-left: 9px;
   margin-right: 9px;
-  border-radius: 3px 3px 3px 3px;
+  border-radius: 2px 2px 2px 2px;
 }

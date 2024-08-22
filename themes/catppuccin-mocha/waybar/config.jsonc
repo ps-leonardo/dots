@@ -10,7 +10,7 @@
     "margin-top": -5,
 
 
-	"modules-left": ["custom/left","custom/arch","cpu","custom/cpuinfo","custom/right","hyprland/window"],
+	"modules-left": ["custom/left","custom/arch", "custom/right", "custom/left","cpu","custom/cpuinfo","custom/right","hyprland/window"],
 	"modules-center": ["custom/left","hyprland/workspaces#kanji","custom/right"],
 	"modules-right": ["custom/spotify","custom/left","pulseaudio","tray","clock","custom/right"],
 
@@ -44,7 +44,8 @@
   },
 
      "custom/arch": {
-        "format": " ",
+       "on-click": "pkill -x fuzzel || fuzzel",
+        "format": "",
 	},
 
     "custom/spotify": {
