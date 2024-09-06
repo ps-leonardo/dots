@@ -12,7 +12,7 @@
 
 	"modules-left": ["custom/left","custom/arch", "custom/right", "custom/left","cpu","custom/cpuinfo","custom/right","hyprland/window"],
 	"modules-center": ["custom/left","hyprland/workspaces#kanji","custom/right"],
-	"modules-right": ["custom/spotify","custom/left","pulseaudio","tray","clock","custom/right"],
+	"modules-right": ["custom/spotify","custom/left","pulseaudio","tray","custom/right","custom/left","clock","custom/right"],
 
  
    "network": {
