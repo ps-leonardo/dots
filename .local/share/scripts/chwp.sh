@@ -20,11 +20,11 @@ while [[ -d $WALLPAPER ]]; do
   WALLPAPER="$(eza | fuzzel --dmenu)"
 done
 
-# wallust run -s "$WALLPAPERDIR$WALLPAPER" >/dev/null 2>&1
+wallust run -s "$WALLPAPERDIR$WALLPAPER" >/dev/null 2>&1
 
-#pidof waybar >/dev/null && killall waybar
-#waybar &
+pidof waybar >/dev/null && killall waybar
+waybar &
 
 swww img "$WALLPAPERDIR$WALLPAPER" --transition-type center
 
-magick "$WALLPAPERDIR$WALLPAPER" ~/.local/share/wallpapers/current.jpg
+magick "$WALLPAPERDIR$WALLPAPER" ~/.config/hypr/resources/current.jpg
