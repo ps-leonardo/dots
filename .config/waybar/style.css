@@ -1,5 +1,4 @@
 @import "colors.css";
-@import "mocha.css";
 * {
     border: none;
     border-radius: 0px;
@@ -24,16 +23,16 @@ window#waybar {
 #network,
 #custom-right,
 #custom-left {
-   color: @text;
-   background: @base;
+   color: @foreground;
+   background: @background;
    margin: 4px 0px 4px 0px;
    opacity: 1;
    border: 0px solid #181825;
 }
 
 tooltip {
-    background: @base;
-    color: @text;
+    background: @background;
+    color: @foreground;
     border-radius: 2px;
     border-width: 2px;
     border-style: solid;
@@ -49,13 +48,13 @@ tooltip {
     margin-bottom: 3px;
     padding-left: 3px;
     padding-right: 3px;
-    color: @text;
+    color: @foreground;
     animation: gradient_f 20s ease-in infinite;
     transition: all 0.5s cubic-bezier(.55,-0.68,.48,1.682);
 }
 
 #workspaces button.active {
-    color: @blue;
+    color: @color1;
     margin-left: 3px;
     padding-left: 3px;
     padding-right: 3px;
@@ -65,7 +64,7 @@ tooltip {
 }
 
 #workspaces button:hover {
-    color: @sky;
+    color: @color7;
     border: none;
 }
 
@@ -76,8 +75,8 @@ tooltip {
 }
 
 #window {
-  background: @base;
-  color: @text;
+  background: @background;
+  color: @foreground;
   margin-top: 4px;
   margin-bottom: 4px;
   padding: 0px;
@@ -88,7 +87,7 @@ tooltip {
 }
 
 #cpu {
-    color: @text;
+    color: @foreground;
     padding-left: 0px;
     padding-right: 5px;
 }
@@ -100,13 +99,13 @@ tooltip {
 }
 
 #custom-cpuinfo {
-    color: @text;
+    color: @foreground;
     padding-left: 0px;
     padding-right: 5px;
 }
 
 #temperature {
-    color: @text;
+    color: @foreground;
     padding-left: 0px;
     padding-right: 5px;
 }
@@ -118,14 +117,14 @@ tooltip {
 }
 
 #pulseaudio {
-    color: @text;
+    color: @foreground;
     padding-left: 0px;
     padding-right: 5px;
 }
 
 #tray {
   padding-left: 0px;
-  color: @text;
+  color: @foreground;
   margin-top: 4px;
   margin-bottom: 4px;
   padding-top: 1px;
@@ -139,7 +138,7 @@ tooltip {
 }
 
 #clock {
-   color: @text;
+   color: @foreground;
    padding-left: 0px;
    padding-right: 0px;
 }
@@ -157,8 +156,8 @@ tooltip {
 }
 
 #custom-spotify {
-  color: @green;
-  background: @base;
+  color: @color4;
+  background: @background;
   margin-top: 4px;
   margin-bottom: 4px;
   margin-left: 9px;
