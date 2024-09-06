@@ -43,9 +43,8 @@ echo -e "${GREEN}:: Done${RESET}"
 echo ""
 
 # Copy configs and scripts
-read -p $'Which theme would you like to install? (tokyo-night/catppuccin-mocha)\n' THEME
-echo -e "${YELLOW}:: Copying $THEME configs and default scripts${RESET}"
-./copy_cfgs.sh "$THEME"
+echo -e "${YELLOW}:: Copying configs and default scripts${RESET}"
+./copy_cfgs.sh
 
 echo -e "${GREEN}:: Done${RESET}"
 echo ""
