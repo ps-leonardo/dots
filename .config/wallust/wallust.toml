@@ -1,11 +1,12 @@
 backend = "wal"
 color_space = "lch"
-palette = "ansidark"
+palette = "dark16"
+fallback_generator = "complementary"
 
 [templates]
   temp.template = 'temp.template'
   temp.target = '~/.config/wallust/templates/temp.target'
-  
+ 
   hyprlock.template = 'hyprlock.colors'
   hyprlock.target = '~/.config/hypr/resources/colors.conf'
 
@@ -14,3 +15,9 @@ palette = "ansidark"
 
   waybar.template = 'waybar.colors'
   waybar.target = '~/.config/waybar/colors.css'
+ 
+  fuzzel.template = 'fuzzel.colors'
+  fuzzel.target = '~/.config/fuzzel/colors.ini'
+  
+  kitty.template = 'kitty.colors'
+  kitty.target = '~/.config/kitty/colors.conf'
