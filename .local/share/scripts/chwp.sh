@@ -1,7 +1,5 @@
 #!/usr/bin/bash
 
-set -euo pipefail
-
 WALLPAPERDIR=~/.local/share/wallpapers/
 cd $WALLPAPERDIR
 
