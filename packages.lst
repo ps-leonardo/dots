@@ -37,6 +37,7 @@ lua
 luarocks
 man-db
 neovim
+network-manager-applet
 noto-fonts-cjk
 noto-fonts-emoji
 npm
