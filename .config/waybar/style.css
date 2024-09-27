@@ -33,7 +33,7 @@ window#waybar {
 tooltip {
     background: @background;
     color: @foreground;
-    border-radius: 2px;
+    border-radius: 5px;
     border-width: 2px;
     border-style: solid;
     border-color: #11111b;
@@ -43,7 +43,7 @@ tooltip {
     box-shadow: none;
     text-shadow: none;
     padding: 0px;
-    border-radius: 2px;
+    border-radius: 5px;
     margin-top: 3px;
     margin-bottom: 3px;
     padding-left: 3px;
@@ -82,7 +82,7 @@ tooltip {
   padding: 0px;
   margin-left: 9px;
   margin-right: 9px;
-  border-radius: 2px 2px 2px 2px;
+  border-radius: 5px 5px 5px 5px;
   
 }
 
@@ -146,13 +146,13 @@ tooltip {
 #custom-right {
     margin-right: 9px;
     padding-right: 3px;
-    border-radius: 0px 2px 2px 0px;
+    border-radius: 0px 5px 5px 0px;
 }
 
 #custom-left {
     margin-left: 9px;
     padding-left: 3px;
-    border-radius: 2px 0px 0px 2px;
+    border-radius: 5px 0px 0px 5px;
 }
 
 #custom-spotify {
@@ -162,5 +162,5 @@ tooltip {
   margin-bottom: 4px;
   margin-left: 9px;
   margin-right: 9px;
-  border-radius: 2px 2px 2px 2px;
+  border-radius: 5px 5px 5px 5px;
 }
