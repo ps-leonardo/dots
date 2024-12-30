@@ -1,6 +1,6 @@
-backend = "wal"
+backend = "kmeans"
 color_space = "lch"
-palette = "dark16"
+palette = "ansidark"
 fallback_generator = "complementary"
 
 [templates]
