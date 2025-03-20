@@ -46,8 +46,8 @@ tooltip {
     border-radius: 5px;
     margin-top: 3px;
     margin-bottom: 3px;
-    padding-left: 3px;
-    padding-right: 3px;
+    padding-left: 1px;
+    padding-right: 1px;
     color: @foreground;
     animation: gradient_f 20s ease-in infinite;
     transition: all 0.5s cubic-bezier(.55,-0.68,.48,1.682);
@@ -56,8 +56,8 @@ tooltip {
 #workspaces button.active {
     color: @color2;
     margin-left: 3px;
-    padding-left: 3px;
-    padding-right: 3px;
+    padding-left: 1px;
+    padding-right: 1px;
     margin-right: 3px;
     animation: gradient_f 20s ease-in infinite;
     transition: all 0.3s cubic-bezier(.55,-0.68,.48,1.682);
