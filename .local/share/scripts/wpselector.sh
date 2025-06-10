@@ -4,7 +4,7 @@ SCRIPTSDIR=~/.local/share/scripts/
 WALLPAPERDIR=~/.local/share/wallpapers/
 
 cd $WALLPAPERDIR
-WALLPAPER="$(eza | fuzzel --dmenu)"
+WALLPAPER="$(eza | wofi --dmenu)"
 
 echo $WALLPAPER
 
