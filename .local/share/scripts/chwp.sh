@@ -3,7 +3,7 @@
 WALLPAPERDIR=~/.local/share/wallpapers/
 cd $WALLPAPERDIR
 
-WALLPAPER="$(eza | wofi --dmenu --allow-images)"
+WALLPAPER="$(eza | fuzzel --dmenu --allow-images)"
 
 if [[ -z $WALLPAPER ]]; then
   notify-send 'No wallpaper selected'
@@ -15,7 +15,7 @@ while [[ -d $WALLPAPER ]]; do
   WALLPAPER="$WALLPAPER/"
   WALLPAPERDIR="$WALLPAPERDIR$WALLPAPER"
   cd "$WALLPAPERDIR"
-  WALLPAPER="$(eza | wofi --dmenu --allow-images)"
+  WALLPAPER="$(eza | fuzzel --dmenu --allow-images)"
 done
 
 swww img "$WALLPAPERDIR$WALLPAPER" --transition-type center
