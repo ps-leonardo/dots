@@ -10,9 +10,9 @@
     "margin-top": -5,
 
 
-	"modules-left": ["custom/left","custom/arch", "custom/right", "custom/left","cpu","custom/cpuinfo","custom/right","hyprland/window"],
-	"modules-center": ["custom/left","hyprland/workspaces#kanji","custom/right"],
-	"modules-right": ["custom/spotify","custom/left","pulseaudio","tray","custom/right","custom/left","clock","custom/right"],
+	"modules-left": ["custom/left","hyprland/workspaces#kanji","custom/right","custom/spotify"],
+	"modules-center": ["hyprland/window"],
+	"modules-right": ["custom/left","cpu","custom/cpuinfo","custom/right","custom/left","pulseaudio","tray","custom/right","custom/left","clock","custom/right"],
 
  
    "network": {
@@ -82,7 +82,12 @@
             "2": [],
             "3": [],
             "4": [],
-            "5": []
+            "5": [],
+            "6": [],
+            "7": [],
+            "8": [],
+            "9": [],
+            "10": [],
         }
     },
 
@@ -96,7 +101,12 @@
             "2": [],
             "3": [],
             "4": [],
-            "5": []
+            "5": [],
+            "6": [],
+            "7": [],
+            "8": [],
+            "9": [],
+            "10": [],
         },
         "format-icons": {
             "1": "一",
