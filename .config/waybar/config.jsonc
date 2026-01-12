@@ -125,7 +125,7 @@
     "pulseaudio": {
         "format": "{icon} {volume}",
         "format-muted": "\uf6a9",
-        "on-click": "pavucontrol -t 3",
+        "on-click": "hyprpwcenter",
         "tooltip-format": "{icon} {desc} // {volume}%",
         "scroll-step": 5,
         "format-icons": {
