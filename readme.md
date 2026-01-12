@@ -13,7 +13,7 @@ These dotfiles help me quickly set up a beautiful, efficient, and keyboard-drive
 
 > **Warning:** These configs are tailored to **my setup**. Back up your existing config files before proceeding.
 
-1. Create a Repos folde:
+1. Create a Repos folder:
     ```bash
     mkdir Repos
     ```
