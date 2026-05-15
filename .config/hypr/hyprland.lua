@@ -12,7 +12,7 @@ end)
 
 -- Env
 
---hl.env("PATH", "$PATH:/home/leonardo/.local/share/scripts")
+hl.env("PATH", os.getenv("PATH") .. ":/home/leonardo/.local/share/scripts")
 hl.env("XDG_CURRENT_DESKTOP", "Hyprland")
 hl.env("XDG_SESSION_TYPE", "wayland")
 hl.env("XDG_SESSION_DESKTOP", "Hyprland")
