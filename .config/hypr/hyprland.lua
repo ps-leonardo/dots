@@ -116,3 +116,6 @@ require("keybindings")
 require("windowrules")
 require("monitors")
 require("noctalia/noctalia-colors")
+
+-- This loads Noctalia-generated Hyprland colors.
+dofile("/home/leonardo/.config/hypr/noctalia/noctalia-colors.lua")

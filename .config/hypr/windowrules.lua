@@ -11,7 +11,7 @@ hl.window_rule({ match = { class = "^(blueman-manager)$" }, float = true })
 hl.window_rule({ match = { class = "^(net.davidotek.pupgui2)$" }, float = true })
 hl.window_rule({ match = { class = "imv" }, float = true })
 
-hl.window_rule({ name = "move-spotify", match = { class = "^(Spotify)$" } })
+hl.window_rule({ name = "move-spotify", match = { class = "^(Spotify)$" }, workspace = "special" })
 
 hl.window_rule({ name = "move-mpv", match = { class = "^(mpv)$" }, float = true, center = true, workspace = "5" })
 

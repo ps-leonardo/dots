@@ -58,11 +58,13 @@ for i = 1, 10 do
 	hl.bind(mainMod .. " + SHIFT + " .. key, hl.dsp.window.move({ workspace = i }))
 end
 
+hl.bind(mainMod .. " + mouse:272", hl.dsp.window.drag(), { mouse = true })
+
 -- Resize windows
-hl.bind(mainMod .. " + SHIFT + RIGHT", hl.dsp.window.resize({ x = 30, y = 0 }))
-hl.bind(mainMod .. " + SHIFT + LEFT", hl.dsp.window.resize({ x = -30, y = 0 }))
-hl.bind(mainMod .. " + SHIFT + UP", hl.dsp.window.resize({ x = 0, y = -30 }))
-hl.bind(mainMod .. " + SHIFT + DOWN", hl.dsp.window.resize({ x = 0, y = -30 }))
+hl.bind(mainMod .. " + SHIFT + RIGHT", hl.dsp.window.resize({ x = -30, y = 0, relative = true }))
+hl.bind(mainMod .. " + SHIFT + LEFT", hl.dsp.window.resize({ x = 30, y = 0, relative = true }))
+hl.bind(mainMod .. " + SHIFT + UP", hl.dsp.window.resize({ x = 0, y = 30, relative = true }))
+hl.bind(mainMod .. " + SHIFT + DOWN", hl.dsp.window.resize({ x = 0, y = -30, relative = true }))
 
 -- Scroll through existing workspaces
 hl.bind(mainMod .. " + mouse_down", hl.dsp.focus({ workspace = "e+1" }))
