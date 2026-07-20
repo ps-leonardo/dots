@@ -5,8 +5,8 @@ hl.monitor({
 	mode = "2560x1080@75",
 	position = "0x0",
 	scale = 1,
-	supports_wide_color = -1,
-	supports_hdr = 1,
+	supports_wide_color = 0,
+	supports_hdr = 0,
 	sdr_min_luminance = 0.005,
 	sdr_max_luminance = 250,
 })
@@ -17,7 +17,7 @@ hl.monitor({
 	position = "2560x312",
 	scale = 1,
 	supports_wide_color = -1,
-	supports_hdr = -1,
+	supports_hdr = 1,
 })
 
 -- Workspaces

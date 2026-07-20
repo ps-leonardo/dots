@@ -6,7 +6,7 @@ hl.on("hyprland.start", function()
 	hl.exec_cmd("dbus-update-activation-environment") --systemd --all -- for XDPH
 	hl.exec_cmd("systemctl --user import-environment WAYLAND_DISPLAY XDG_CURRENT_DESKTOP") -- for XDPH
 	hl.exec_cmd("systemctl --user start hyprpolkitagent") -- authentication dialogue for GUI apps
-	hl.exec_cmd("qs -c noctalia-shell")
+	hl.exec_cmd("noctalia")
 	hl.exec_cmd("gsettings set org.gnome.desktop.interface icon-theme 'Papirus-Dark'")
 end)
 
@@ -18,10 +18,10 @@ hl.env("XDG_SESSION_TYPE", "wayland")
 hl.env("XDG_SESSION_DESKTOP", "Hyprland")
 hl.env("QT_QPA_PLATFORM", "wayland;xcb")
 hl.env("QT_QPA_PLATFORMTHEME", "qt6ct")
-hl.env("QT_WAYLAND_DISABLE_WINDOWDECORATION", "1")
-hl.env("QT_AUTO_SCREEN_SCALE_FACTOR", "1")
-hl.env("MOZ_ENABLE_WAYLAND", "1")
-hl.env("GDK_SCALE", "1")
+hl.env("QT_WAYLAND_DISABLE_WINDOWDECORATION", 1)
+hl.env("QT_AUTO_SCREEN_SCALE_FACTOR", 1)
+hl.env("MOZ_ENABLE_WAYLAND", 1)
+hl.env("GDK_SCALE", 1)
 hl.env("GTK_IM_MODULE", "ibus")
 hl.env("EDITOR", "nvim")
 hl.env("READER", "zathura")
@@ -32,14 +32,15 @@ hl.env("BROWSER", "zen-browser")
 
 -- Gaming
 
-hl.env("PROTON_FSR4_UPGRADE", "1")
+hl.env("PROTON_FSR4_UPGRADE", 1)
 -- hl.env("PROTON_FSR4_INDICATOR, 1
 -- hl.env("PROTON_FSR4_RDNA3_UPGRADE, 1
-hl.env("PROTON_ENABLE_WAYLAND", "1")
-hl.env("PROTON_NO_WM_DECORATION", "1")
-hl.env("PROTON_ENABLE_HDR", "1")
-hl.env("PROTON_USE_NTSYNC", "1")
-hl.env("PROTON_ENABLE_MESA_ANTI_LAG", "1")
+hl.env("PROTON_ENABLE_WAYLAND", 1)
+hl.env("PROTON_NO_WM_DECORATION", 1)
+hl.env("PROTON_ENABLE_HDR", 1)
+hl.env("DXVK_HDR", 1)
+hl.env("PROTON_USE_NTSYNC", 1)
+hl.env("PROTON_ENABLE_MESA_ANTI_LAG", 1)
 
 -- Input
 
@@ -90,23 +91,24 @@ hl.config({
 	general = {
 		gaps_in = 5,
 		gaps_out = 10,
-		layout = "dwindle",
-		resize_on_border = false,
 	},
+
 	decoration = {
 		rounding = 20,
 		rounding_power = 2,
+
+		shadow = {
+			enabled = true,
+			range = 4,
+			render_power = 3,
+			color = 0xee1a1a1a,
+		},
+
 		blur = {
 			enabled = true,
 			size = 3,
 			passes = 2,
-			new_optimizations = true,
-			ignore_opacity = true,
-			xray = false,
 			vibrancy = 0.1696,
-		},
-		shadow = {
-			enabled = false,
 		},
 	},
 })
@@ -119,3 +121,6 @@ require("noctalia/noctalia-colors")
 
 -- This loads Noctalia-generated Hyprland colors.
 dofile("/home/leonardo/.config/hypr/noctalia/noctalia-colors.lua")
+
+-- For Noctalia Color templates
+require("noctalia").apply_theme()

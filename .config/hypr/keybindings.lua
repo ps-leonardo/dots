@@ -1,7 +1,7 @@
 -- Keybinds
 
 local mainMod = "SUPER"
-local ipc = "qs -c noctalia-shell ipc call"
+local ipc = "noctalia msg "
 
 -- Assign apps
 local term = "kitty"
@@ -13,7 +13,7 @@ local browser = "zen-browser"
 hl.bind(mainMod .. " + Q", hl.dsp.window.close())
 hl.bind(mainMod .. " + W", hl.dsp.window.float({ action = "toggle" }))
 hl.bind("ALT + RETURN", hl.dsp.window.fullscreen({ action = "toggle" }))
-hl.bind(mainMod .. " + L", hl.dsp.exec_cmd(ipc .. " lockScreen lock"))
+hl.bind(mainMod .. " + L", hl.dsp.exec_cmd(ipc .. "session lock"))
 
 -- Application shortcuts
 hl.bind(mainMod .. " + T", hl.dsp.exec_cmd("kitty"))
@@ -22,7 +22,7 @@ hl.bind(mainMod .. " + C", hl.dsp.exec_cmd(editor))
 hl.bind(mainMod .. " + F", hl.dsp.exec_cmd(browser))
 hl.bind("CTRL + SHIFT + ESCAPE", hl.dsp.exec_cmd(term .. "-e btop"))
 
-hl.bind(mainMod .. " + A", hl.dsp.exec_cmd(ipc .. " launcher toggle"))
+hl.bind(mainMod .. " + A", hl.dsp.exec_cmd(ipc .. "panel-toggle launcher"))
 
 --TODO: CHECK AUDIOCONTROL
 -- Audio control
@@ -34,12 +34,12 @@ hl.bind("XF86AudioNext", hl.dsp.exec_cmd("playerctl next"))
 hl.bind("XF86AudioPrev", hl.dsp.exec_cmd("playerctl previous"))
 
 -- Screenshot/Screencapture
-hl.bind(mainMod .. " + P", hl.dsp.exec_cmd(ipc .. " plugin:screen-shot-and-record screenshot"))
-hl.bind(mainMod .. " + SHIFT + R", hl.dsp.exec_cmd(ipc .. " plugin:screen-shot-and-record recordsound"))
+hl.bind(mainMod .. " + P", hl.dsp.exec_cmd(ipc .. "screenshot-region"))
+hl.bind(mainMod .. " + SHIFT + R", hl.dsp.exec_cmd(ipc .. "plugin noctalia/screen_recorder:service all toggle"))
 
 -- Custom scripts
-hl.bind(mainMod .. " + SHIFT + W", hl.dsp.exec_cmd(ipc .. " wallpaper toggle"))
-hl.bind(mainMod .. " + V", hl.dsp.exec_cmd(ipc .. " launcher clipboard"))
+hl.bind(mainMod .. " + SHIFT + W", hl.dsp.exec_cmd(ipc .. "panel-toggle noctalia/wallhaven:browser"))
+hl.bind(mainMod .. " + V", hl.dsp.exec_cmd(ipc .. "panel-toggle clipboard"))
 hl.bind(
 	mainMod .. " + SPACE",
 	hl.dsp.exec_cmd("hyprctl switchxkblayout 'logitech-g915-wireless-rgb-mechanical-gaming-keyboard', next")
