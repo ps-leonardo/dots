@@ -1,0 +1,81 @@
+# Float windows
+[[window_rule]]
+match.app_id = "^qt5ct$"
+default_floating = true
+
+[[window_rule]]
+match.app_id = "^qt6ct$"
+default_floating = true
+
+[[window_rule]]
+match.app_id = "^nwg-look$"
+default_floating = true
+
+[[window_rule]]
+match.app_id = "^org.pulseaudio.pavucontrol$"
+default_floating = true
+
+[[window_rule]]
+match.app_id = "^imv$"
+default_floating = true
+
+# Move Windows
+[[window_rule]]
+match.app_id = "Spotify$"
+default_floating = true
+default_scratchpad = "music"
+
+[[window_rule]]
+match.app_id = "^(mpv)$"
+default_floating = true
+default_workspace = "2"
+
+[[window_rule]]
+match.app_id = "^(steam)$"
+default_floating = true
+default_workspace = "3"
+
+[[window_rule]]
+match.app_id = "^(equibop)$"
+default_floating = false
+default_workspace = "4"
+
+# Blur all windows
+[[window_rule]]
+blur = true
+blur_optimized = false
+
+[[window_rule]]
+match.app_id = "^dev.noctalia.UmbrielSharePicker$"
+default_floating = true
+default_floating_size_px = { width = 800, height = 600 }
+
+# Float Noctalia's settings window
+[[window_rule]]
+match.app_id = "^dev.noctalia.Noctalia$"
+default_floating = true
+
+[[window_rule]]
+match.title = "^(Picture-in-Picture|Picture in picture)$"
+default_floating = true
+default_maximize = false
+default_position = { x = 20, y = 20, anchor = "bottom_right" }
+
+[[window_rule]]
+match.title = "^notificationtoasts_.+_desktop"
+default_position = { x = 0, y = 0, anchor = "bottom_right" }
+default_focused = false
+default_pinned = true
+
+[[layer_rule]]
+match.namespace = "^noctalia-(bar-[^\"]+|notification|dock|panel|attached-panel|osd)$"
+blur = true
+blur_ignore_alpha = 0.5
+blur_optimized = false
+
+[[layer_rule]]
+match.namespace = "^noctalia-(bar-[^\"]+|notification|dock|panel|attached-panel|osd|desktop-widget-[^\"]*)$"
+blur = true
+blur_ignore_alpha = 0.5
+blur_popups = true
+blur_optimized = false

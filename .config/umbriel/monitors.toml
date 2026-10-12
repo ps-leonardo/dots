@@ -1,0 +1,62 @@
+[output.DP-1]
+mode = "2560x1080@75"
+position = [0, 0]
+scale = 1
+workspaces = ["1", "3", "5", "7", "9"]
+vrr = "fullscreen"
+hdr = "auto"
+bit_depth = 8
+tearing = true
+
+[output.DP-2]
+mode = "1366x768"
+position = [2560, 312]
+scale = 1.0
+vrr = "disabled"
+hdr = "off"
+workspaces = ["2", "4", "6", "8", "10"]
+
+[[scratchpad]]
+name = "music"
+
+[[workspace]]
+name = "1"
+output = "DP-1"
+
+[[workspace]]
+name = "2"
+output = "DP-2"
+layout.mode = "scrolling"
+
+[[workspace]]
+name = "3"
+output = "DP-1"
+layout.mode = "master"
+
+[[workspace]]
+name = "4"
+output = "DP-2"
+
+[[workspace]]
+name = "5"
+output = "DP-1"
+
+[[workspace]]
+name = "6"
+output = "DP-2"
+
+[[workspace]]
+name = "7"
+output = "DP-1"
+
+[[workspace]]
+name = "8"
+output = "DP-2"
+
+[[workspace]]
+name = "9"
+output = "DP-1"
+
+[[workspace]]
+name = "10"
+output = "DP-2"
