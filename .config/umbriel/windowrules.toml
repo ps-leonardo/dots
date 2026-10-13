@@ -32,7 +32,7 @@ default_workspace = "2"
 
 [[window_rule]]
 match.app_id = "^(steam)$"
-default_floating = true
+default_floating = false
 default_workspace = "3"
 
 [[window_rule]]

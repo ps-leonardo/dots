@@ -19,7 +19,7 @@ files = ["keybinds.toml", "monitors.toml", "windowrules.toml", "appearance.toml"
 files = ["noctalia.toml"]
 
 [general]
-autostart = ["noctalia", "dbus-update-activation-environment"]
+autostart = ["noctalia", "dbus-update-activation-environment", "equibop", "steam", "ghostty --gtk-single-instance=true --quit-after-last-window-closed=false --initial-window=false"]
 
 [input.keyboard]
 layout = "br,us"

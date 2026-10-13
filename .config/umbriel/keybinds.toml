@@ -6,7 +6,7 @@
 
 # Application shortcuts
 "Mod+F" = { action = "spawn:librewolf", repeat = false }
-"Mod+T" = { action = "spawn:ghostty", repeat = false }
+"Mod+T" = { action = "spawn:ghostty --gtk-single-instance=true", repeat = false }
 "Mod+E" = { action = "spawn:nautilus", repeat = false }
 
 # Focus and movement
