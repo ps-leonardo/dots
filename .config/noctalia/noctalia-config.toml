@@ -1,0 +1,192 @@
+[bar.default]
+center = ["workspaces"]
+end = ["cpu", "ram", "temp", "spacer_3", "tray", "notifications", "spacer_3", "volume", "date", "clock"]
+margin_ends = 0
+position = "bottom"
+radius_bottom_left = 0
+radius_bottom_right = 0
+start = ["active_window", "spacer_2", "media"]
+thickness = 28
+
+[desktop_widgets]
+enabled = false
+
+[idle]
+behavior_order = ["lock", "screen-off", "lock-and-suspend"]
+pre_action_fade_seconds = 5
+
+[idle.behavior.lock]
+action = "lock"
+enabled = true
+timeout = 600.0
+
+[idle.behavior.lock-and-suspend]
+action = "lock_and_suspend"
+enabled = false
+timeout = 900.0
+
+[idle.behavior.screen-off]
+action = "screen_off"
+enabled = true
+timeout = 660.0
+
+[lockscreen_widgets]
+enabled = false
+schema_version = 2
+widget_order = ["lockscreen-login-box@DP-2", "lockscreen-login-box@DP-1"]
+
+[lockscreen_widgets.grid]
+cell_size = 16
+major_interval = 4
+visible = true
+
+[lockscreen_widgets.widget."lockscreen-login-box@DP-1"]
+box_height = 196.0
+box_width = 810.0
+cx = 1280.0
+cy = 898.0
+output = "DP-1"
+placement_height = 1080.0
+placement_width = 2560.0
+rotation = 0.0
+type = "login_box"
+
+[lockscreen_widgets.widget."lockscreen-login-box@DP-1".settings]
+background_color = "surface_variant"
+background_opacity = 0.88
+background_radius = 12.0
+center_password_text = false
+input_opacity = 1.0
+input_radius = 6.0
+layout = "regular"
+show_caps_lock = true
+show_keyboard_layout = true
+show_login_button = true
+show_media = true
+show_session_buttons = true
+show_unlock_hint = true
+show_weather = true
+
+[lockscreen_widgets.widget."lockscreen-login-box@DP-2"]
+box_height = 196.0
+box_width = 810.0
+cx = 683.0
+cy = 586.0
+output = "DP-2"
+placement_height = 768.0
+placement_width = 1366.0
+rotation = 0.0
+type = "login_box"
+
+[lockscreen_widgets.widget."lockscreen-login-box@DP-2".settings]
+background_color = "surface_variant"
+background_opacity = 0.88
+background_radius = 12.0
+center_password_text = false
+input_opacity = 1.0
+input_radius = 6.0
+layout = "regular"
+show_caps_lock = true
+show_keyboard_layout = true
+show_login_button = true
+show_media = true
+show_session_buttons = true
+show_unlock_hint = true
+show_weather = true
+
+[osd]
+position = "top_right"
+position_vertical = "top_right"
+
+[plugin_settings."noctalia/screen_recorder"]
+audio_bitrate = 128
+color_range = "full"
+video_codec = "av1"
+video_qp = 20
+
+[plugin_settings."noctalia/wallhaven"]
+browser_placement = "floating"
+browser_position = "center"
+download_dir = "/home/leonardo/Pictures/Wallpapers"
+
+[plugins]
+enabled = ["noctalia/screen_recorder", "noctalia/wallhaven"]
+
+[shell]
+avatar_path = "/home/leonardo/.config/noctalia/.face"
+font_family = "Noto Sans"
+polkit_agent = true
+settings_expand_all_groups = true
+settings_window_translucent = true
+
+[shell.greeter_sync]
+auto_sync = true
+
+[shell.launcher]
+categories = false
+show_session_button = false
+show_settings_button = false
+
+[shell.mpris]
+blacklist = ["librewolf", "chrome", "chromium", "firefox"]
+
+[shell.panel]
+control_center_placement = "floating"
+open_near_click_control_center = true
+open_near_click_session = true
+session_placement = "floating"
+transparency_mode = "glass"
+
+[shell.screenshot]
+directory = "/home/leonardo/Pictures/Screenshots"
+
+[storage]
+key_file = "/home/leonardo/.config/noctalia/noctalia-storage-key"
+key_source = "file"
+
+[theme]
+builtin = "Catppuccin"
+mode = "dark"
+source = "wallpaper"
+wallpaper_scheme = "m3-content"
+
+[theme.templates]
+builtin_ids = ["btop", "gtk3", "gtk4", "ghostty", "kcolorscheme", "qt", "starship", "umbriel"]
+community_ids = ["pywalfox", "discord", "bat", "lazygit", "yazi"]
+
+[wallpaper]
+directory = "/home/leonardo/Pictures/Wallpapers"
+
+[wallpaper.default]
+path = "/home/leonardo/Pictures/Wallpapers/wallhaven-yq9zo7.jpg"
+
+[wallpaper.last]
+path = "/home/leonardo/Pictures/Wallpapers/wallhaven-yq9zo7.jpg"
+
+[wallpaper.monitors.DP-1]
+path = "/home/leonardo/Pictures/Wallpapers/wallhaven-yq9zo7.jpg"
+
+[wallpaper.monitors.DP-2]
+path = "/home/leonardo/Pictures/Wallpapers/wallhaven-yq9zo7.jpg"
+
+[widget.clock]
+format = "{:%-I:%M %p}"
+
+[widget.date]
+format = "{:%d %b}"
+
+[widget.media]
+hide_when_no_media = true
+max_length = 255
+show_progress = true
+
+[widget.spacer_2]
+length = 15
+type = "spacer"
+
+[widget.spacer_3]
+length = 12
+type = "spacer"
+
+[widget.workspaces]
+active_pill_size = 1.3500000000000001
